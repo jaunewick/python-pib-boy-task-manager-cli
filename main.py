@@ -72,7 +72,7 @@ def print_cli_menu():
             case 'D':
                 delete_task()
             case 'Q':
-                print("\n⏳ Shutting down Pib-Boy...\n")
+                print("\n⏳ Shutting down Pip-Boy...\n")
                 print("=== Thank you for using our software! ===\n")
                 break
             case _:
