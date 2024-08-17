@@ -54,3 +54,28 @@ def delete_task():
         print("Invalid ID")
     except ValueError:
         print("Invalid input")
+
+def print_cli_menu():
+    while True:
+        user_input = input("Enter 'A' to add, 'U' to update to done, 'D' to delete, or 'E' to exit").upper()
+        match user_input:
+            case 'A':
+                add_task()
+            case 'U':
+                update_task()
+            case 'D':
+                delete_task()
+            case 'E':
+                print("Thank you for using our software!")
+                break
+            case _:
+                print("Invalid input")
+        print_all_tasks()
+
+
+
+if __name__ == "__main__":
+    os.system("cls" if os.name == "nt" else "clear")
+    # Glowing green text
+    print("\033[32;1m")
+    print_cli_menu()
