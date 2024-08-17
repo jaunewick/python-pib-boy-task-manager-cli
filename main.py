@@ -33,9 +33,7 @@ def print_all_tasks():
 def update_task():
     try:
         print_all_tasks()
-
         id = int(input("Enter the ID of the task:"))
-
         tasks[id].is_done = True
         # TODO Save to pickle file
         pass
@@ -44,8 +42,15 @@ def update_task():
     except ValueError:
         print("Invalid input")
 
-
-
-
-
 # Delete
+def delete_task():
+    try:
+        print_all_tasks()
+        id = int(input("Enter the ID of the task:"))
+        del tasks[id]
+        # TODO Save to pickle file
+        pass
+    except IndexError:
+        print("Invalid ID")
+    except ValueError:
+        print("Invalid input")
