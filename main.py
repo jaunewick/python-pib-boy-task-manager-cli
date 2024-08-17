@@ -11,3 +11,17 @@ class TaskManager():
         self.created_at = created_at
         self.is_completed = is_completed
 
+# Create
+def add_task():
+    title = input("Type your task: ")
+    created_at = datetime.now().strftime("%d/%m %H:%M")
+    task = TaskManager(title, created_at)
+    tasks.append(task)
+
+    # TODO Save to pickle file
+
+# Read
+
+# Update
+
+# Delete
