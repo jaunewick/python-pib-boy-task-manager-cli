@@ -1,4 +1,4 @@
-# python-pib-boy-task-manager-cli
+# python-pip-boy-task-manager-cli
 
 A simple terminal-based task management tool inspired by the iconic Pip-Boy from the Fallout series.
 
